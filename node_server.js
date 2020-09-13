@@ -5,7 +5,7 @@ var path = require('path');
 http.createServer(function(req, res){
 
     if(req.url === "/"){
-        fs.readFile("./index3.html", "UTF-8", function(err, html){
+        fs.readFile("./index2.html", "UTF-8", function(err, html){
             res.writeHead(200, {"Content-Type": "text/html"});
             res.end(html);
         });
