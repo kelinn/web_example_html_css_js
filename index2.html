@@ -47,6 +47,10 @@
     <h3>Testimonios</h3>
     <p>Me gusta mucho esta página.</p>
     </aside>
+    
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
     <footer>
       <h4>Avisos legales</h4>
       <a href="http://dominio.com/aviso-legal">Política de cookies</a>
@@ -55,3 +59,12 @@
     </footer>
   </body>
 </html>
+<script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = fruits;
+  
+  function myFunction() {
+    fruits.sort();
+    document.getElementById("demo").innerHTML = fruits;
+  }
+  </script>
